@@ -38,7 +38,7 @@ async function resetSystem() {
 
         // Начинаем заново
         currentQuestionIndex = 0;
-        session.close();
+        //session.close();
         await initSystem();
     });
 }

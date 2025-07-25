@@ -9,6 +9,8 @@ const PORT = 4444;
 app.use(express.json());
 app.use(cors());
 
+app.use(express.static(path.join(__dirname, '/')));
+
 // Функция для вставки нового материала в правильное место
 async function insertMaterialToFile(material, preferences) {
     const filePath = path.join(__dirname, 'knowledge.pl');

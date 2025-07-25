@@ -279,7 +279,7 @@ material(abrakadabrah_steni) :-
 question('Материал должен быть влагостойким?<br>(0 - не важно, 10 - очень важно)', [
     option('vlagostoikost', 'Влагостойкость')
 ]).
-/*
+
 question('Нужна термостойкость?<br>(0 - не важно, 10 - очень важно)', [
     option('temperature_stable', 'Термостойкость')
 ]).
@@ -347,7 +347,7 @@ question('Насколько важна звукоизоляция?<br>(0 - не
 question('Насколько важна мягкость покрытия?<br>(0 - не важно, 10 - очень важно)', [
     option('myagkost', 'Мягкость покрытия')
 ]).
-*/
+
 % Предикат для получения текущего вопроса
 current_question(Question, Options) :-
     question(Question, Options).
